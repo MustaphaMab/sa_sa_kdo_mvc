@@ -2,7 +2,7 @@
 
 class Order_Line extends Model
 {
-    private $bd;
+    protected $bd;
 
     private static $instance=null;
 

@@ -2,7 +2,7 @@
 
 class Delivery extends Model
 {
-    private $bd;
+    protected $bd;
 
     private static $instance=null;
 
@@ -19,5 +19,9 @@ class Delivery extends Model
     protected function __construct() {
         parent::__construct(); 
     }
+
+    
+
+
 
 }

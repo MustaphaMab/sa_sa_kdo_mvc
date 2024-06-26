@@ -2,9 +2,9 @@
 
 class Category extends Model
 {
-    private $bd;
+    protected $bd;
 
-    private static $instance=null;
+    private static $instance = null;
 
     public static function get_model()
     {
@@ -20,4 +20,19 @@ class Category extends Model
         parent::__construct(); 
     }
 
+    // ------------------  all category -------------------- 
+
+    public function get_all_category()
+
+{
+try {
+    $requete = $this->bd->prepare('SELECT * FROM category');
+    $requete->execute();
+    return $requete->fetchAll(PDO::FETCH_OBJ);
+    } catch (PDOException $e) {
+        die('Erreur [' . $e->getCode() . '] : ' . $e->getMessage());
+}
+
+
+}
 }

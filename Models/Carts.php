@@ -2,7 +2,7 @@
 
 class Carts extends Model
 {
-    private $bd;
+    protected $bd;
 
     private static $instance=null;
 

@@ -2,7 +2,7 @@
 
 class Order extends Model
 {
-    private $bd;
+    protected $bd;
 
     private static $instance=null;
 

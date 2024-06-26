@@ -2,7 +2,7 @@
 
 class Security
 {
-    private $bd;
+    protected $bd;
 
     private static $instance = null;
 

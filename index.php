@@ -4,6 +4,15 @@
 require_once('App/Model.php');
 
 require_once('Models/Security.php');
+require_once('Models/Carts.php');
+require_once('Models/Category.php');
+require_once('Models/Order_line.php');
+require_once('Models/Order.php');
+require_once('Models/Payments.php');
+require_once('Models/Product.php');
+require_once('Models/Role.php');
+require_once('Models/User.php');
+require_once('Models/Delivery.php');
 /* ------------------------------- Controllers ------------------------------ */
 require_once('App/Controller.php');
 
