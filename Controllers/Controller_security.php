@@ -22,14 +22,14 @@ class Controller_security extends Controller
 
 //...............login......................
 
-    public function action_login_form()
+    public function action_login()
 
     {
         $m=Security::get_model();
 
-        $data = ['user'=>$m->get_login_form()];
+        $data = ['user'=>$m->get_login()];
 
-        $this->render("login_form",$data);
+        $this->render("login",$data);
         
     }
 

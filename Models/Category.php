@@ -32,7 +32,5 @@ try {
     } catch (PDOException $e) {
         die('Erreur [' . $e->getCode() . '] : ' . $e->getMessage());
 }
-
-
 }
 }

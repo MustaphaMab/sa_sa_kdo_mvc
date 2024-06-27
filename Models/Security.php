@@ -1,6 +1,6 @@
 <?php
 
-class Security
+class Security extends Model
 {
     protected $bd;
 
@@ -30,7 +30,7 @@ class Security
     // ----------------------------------PARTIE LOGIN --------------------------------------------//
 
 
-    public function get_login_form()
+    public function get_login()
     {
         $email = $_POST['email'];
         $MdP = $_POST['MdP'];
